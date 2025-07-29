@@ -34,7 +34,7 @@
 /* sezioni interne */
 
 .sidebar{
-    width: 240px;
+    width: 220px;
     flex-shrink: 0;
      /* debug */
     background-color: blue;
@@ -68,7 +68,7 @@
     
 
         /* debug */
-    background-color: chocolate;
+    background-color: #282828;
 }
 
 .player-left{
@@ -100,11 +100,28 @@
 
 
 .title-song{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
+    margin: 10px;
+}
+
+.artist-name{
+    font-size: 10px;
+    color: #878787;
 }
 
 .img-song{
     width: 10%;
 
+}
+
+.icon-content-player{
+    font-size: 15px;
+    color: #878787;
+    margin: 20px;
+    
+}
+
+.icon-content-player i{
+    margin: 5px;
 }
