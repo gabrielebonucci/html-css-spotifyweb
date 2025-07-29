@@ -49,7 +49,7 @@
 }
 
 /* barra superiore fissa */
-.top-bar{
+.call-to-action{
     position: sticky;
     top: 0;
     z-index: 100;
@@ -60,9 +60,51 @@
 }
 
 .player{
+    display: flex;
+    justify-content: space-between;
     height: 100px;
     flex-shrink: 0;
+    align-items: center;
+    
 
         /* debug */
     background-color: chocolate;
+}
+
+.player-left{
+    flex-basis: 30%;
+}
+
+.player-center{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.player-right{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.player-content{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+
+.title-song{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.img-song{
+    width: 10%;
+
 }
