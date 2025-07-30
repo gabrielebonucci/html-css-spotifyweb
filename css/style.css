@@ -86,7 +86,7 @@
     gap: 15px;
 }
 
-.player-icon-control{
+.player-icon{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -100,7 +100,6 @@
     flex-basis: 30%;
     justify-content: flex-end;
     align-items: center;
-    background-color: blueviolet;
 }
 
 .player-content{
@@ -174,6 +173,14 @@
 }
 
 
+ .player-right .progress-container{
+    width: 40%;
+    flex-grow: 0;
+}
+
+.player-right i{
+    font-size: 12px;
+}
 
 
 .title-song{
@@ -202,3 +209,4 @@
 .icon-content-player i{
     margin: 5px;
 }
+
