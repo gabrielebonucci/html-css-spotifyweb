@@ -87,6 +87,10 @@
 }
 
 .player-icon-control{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
     color: white;
     font-size: 20px;
 }
@@ -157,11 +161,18 @@
 
 .player-control i{
     margin: 8px;
+    cursor: pointer;
+
 }
 
 .fa-circle-play{
-    font-size: 25px;
+    font-size: 30px;
 }
+
+.fa-circle-play:hover{
+    transform: scale(1.2);
+}
+
 
 
 
