@@ -194,6 +194,12 @@
     color: #878787;
 }
 
+.artist-name:hover{
+    color: white;
+text-decoration: underline;
+cursor: pointer;
+}
+
 .img-song{
     width: 45px;
 
@@ -205,6 +211,10 @@
     margin: 20px;
     
 }
+
+.icon-content-player i:hover{
+color: #ffffff;
+cursor: pointer;}
 
 .icon-content-player i{
     margin: 5px;
