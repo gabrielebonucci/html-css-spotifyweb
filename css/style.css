@@ -36,7 +36,7 @@
 
 /* sezioni interne */
 
-
+/* sidebar */
 
 .sidebar{
     display: flex;
@@ -45,11 +45,32 @@
     flex-shrink: 0;
      /* debug */
     background-color: black;
+    padding: 8px;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar a{
+    color: #b3b3b3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding:  0 8px;
+    font-weight: bold;
 }
 
 .spotify-logo{
     height: 40px;
     margin: 15px;
+}
+
+.primary-actions img{
+    height: 25px;
+    margin: 6px;
 }
 
 .content{
