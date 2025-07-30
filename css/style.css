@@ -36,11 +36,20 @@
 
 /* sezioni interne */
 
+
+
 .sidebar{
+    display: flex;
+    flex-direction: column;
     width: 220px;
     flex-shrink: 0;
      /* debug */
-    background-color: blue;
+    background-color: black;
+}
+
+.spotify-logo{
+    height: 40px;
+    margin: 15px;
 }
 
 .content{
@@ -61,6 +70,10 @@
     /* debug */
     background-color: yellow;
 }
+
+
+
+/* Footer player */
 
 .player{
     display: flex;
