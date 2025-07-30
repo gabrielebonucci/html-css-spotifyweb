@@ -52,6 +52,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 3px;
 }
 
 .sidebar a{
@@ -59,18 +60,25 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding:  0 8px;
     font-weight: bold;
+    width: fit-content;
 }
+
 
 .spotify-logo{
-    height: 40px;
-    margin: 15px;
+    height: 45px;
+    padding: 6px;
+    margin-bottom: 15px;
 }
 
-.primary-actions img{
+
+
+.primary-actions  img{
     height: 25px;
-    margin: 6px;
+}
+
+.sidebar .primary-actions a:hover {
+    color: #ffffff;
 }
 
 .content{
@@ -80,6 +88,32 @@
     /* debug */
     background-color: green;
 }
+
+/* sezione playlist */
+
+.sidebar h4{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.playlist-container{
+
+    margin-top: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.playlist-list li{
+
+}
+
+.playlist-list a:hover {
+    color: white;
+}
+
+
+
+
 
 /* barra superiore fissa */
 .call-to-action{
