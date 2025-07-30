@@ -66,9 +66,13 @@
 
 
 .spotify-logo{
-    height: 45px;
-    padding: 6px;
+    height: 50px;
+    padding: 4px;
     margin-bottom: 15px;
+}
+
+.primary-actions span{
+    margin: 10px 5px;
 }
 
 
@@ -80,6 +84,8 @@
 .sidebar .primary-actions a:hover {
     color: #ffffff;
 }
+
+
 
 .content{
     overflow-y: auto;
@@ -103,14 +109,18 @@
     overflow-y: auto;
 }
 
-.playlist-list li{
 
-}
-
-.playlist-list a:hover {
+.playlist-list li:hover {
     color: white;
 }
 
+.fa-plus-square{
+    font-size: 45px;
+    margin: 6px;
+}
+.playlist-list li{
+    margin: 10px 5px;
+}
 
 
 
