@@ -53,6 +53,7 @@
     flex-direction: column;
     width: 100%;
     margin: 3px;
+    flex-grow: 1;
 }
 
 .sidebar a{
@@ -92,7 +93,7 @@
     flex-grow: 1;
 
     /* debug */
-    background-color: green;
+    background-color: #141922;
 }
 
 /* sezione playlist */
@@ -110,7 +111,7 @@
 }
 
 
-.playlist-list li:hover {
+.playlist-list a:hover {
     color: white;
 }
 
@@ -120,6 +121,45 @@
 }
 .playlist-list li{
     margin: 10px 5px;
+}
+
+.user-section{
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+.download-app{
+    height: 18px;
+
+}
+
+.user-section hr{
+    width: 95%;
+    margin-bottom: 6px;
+
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    ;
+}
+
+.profile-img{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%; 
+    background-color: #535353; 
+}
+
+.user-profile span{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.user-section span{
+    margin: 8px;
 }
 
 
@@ -133,7 +173,7 @@
     height: 70px;
     
     /* debug */
-    background-color: yellow;
+    background-color: #080B12;
 }
 
 
