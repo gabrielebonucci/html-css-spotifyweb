@@ -99,16 +99,14 @@ ul{
 
 
 .content{
-    display: flex;
-    flex-direction: column;
+
     flex-grow: 1;
-    overflow: hidden;
+    overflow-y: auto;
     background-color: #141922;
 }
 
 .main-view{
-    overflow-y: auto;
-    flex-grow: 1;
+    padding: 5px;
 
 }
 
