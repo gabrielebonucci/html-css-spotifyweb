@@ -220,21 +220,126 @@ transform: scale(1.05);
 .card-grid{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-}
-.main-navbar ul {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
     gap: 24px;
 }
+
+
+
+
 .card-section h2 {
     margin-bottom: 16px;
     font-size: 24px;
 }
 
+
+
+.card{
+    background-color: #141922;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: calc(100% / 6 - 21px);
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+
+
+.card-text h3{
+    font-size: 20px;
+        overflow: hidden;
+
+}
+
+.card-text{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-image{
+    position: relative;
+
+}
+
+.card-image img{
+    width: 100%;
+    border-radius: 6px;
+}
+
 .card-section {
     margin: 32px;
+}
+
+.card-text p{
+    color: #b3b3b3;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Button play hover */
+
+
+.card .card-play-button{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    color: white;
+    border-radius: 50%;
+
+
+}
+
+.card:hover .card-image img {
+    filter: brightness(60%);
+}
+
+.card:hover .card-play-button{
+    opacity: 1;
+
+}
+
+
+/* navbar  */
+
+.main-navbar ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.main-navbar a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+
+.main-navbar a:hover{
+ color: white;   
+
+}
+
+.main-navbar a.active::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+    width: 40px;
+    height: 3px;
+    background-color: #1db954;
+    border-radius: 2px;
 }
 
 
@@ -342,14 +447,14 @@ transform: scale(1.05);
 
 }
 
-.fa-circle-play{
+.player-control .fa-circle-play{
     font-size: 30px;
 }
 
-.fa-circle-play:hover{
+
+.player-control .fa-circle-play:hover{
     transform: scale(1.2);
 }
-
 
  .player-right .progress-container{
     width: 40%;
