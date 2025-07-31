@@ -213,6 +213,31 @@ ul{
 transform: scale(1.05);
 }
 
+
+
+/* Sezione principale card */
+
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.main-navbar ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 24px;
+}
+.card-section h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.card-section {
+    margin: 32px;
+}
+
+
 /* Footer player */
 
 .player{
