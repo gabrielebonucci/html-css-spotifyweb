@@ -511,3 +511,16 @@ cursor: pointer;}
     margin: 5px;
 }
 
+/* Media query responsive */
+
+@media (max-width:760px) {
+
+
+}
+
+@media (max-width:576px) {
+.sidebar{
+    width: 100px;
+    padding: 8px;
+}
+}
