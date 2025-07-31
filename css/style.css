@@ -16,8 +16,6 @@
 .top-bar{
     height: 120px;
 
-        /* debug */
-    background-color: red;
 }
 
 .wrapper{
@@ -47,8 +45,6 @@ ul{
     flex-direction: column;
     width: 220px;
     flex-shrink: 0;
-     /* debug */
-    background-color: black;
     padding: 8px;
 }
 
@@ -221,6 +217,7 @@ transform: scale(1.05);
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    margin-bottom: 50px;
 }
 
 
@@ -228,7 +225,7 @@ transform: scale(1.05);
 
 .card-section h2 {
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 
@@ -237,7 +234,6 @@ transform: scale(1.05);
     background-color: #141922;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     flex-basis: calc(100% / 6 - 21px);
     border-radius: 8px;
     cursor: pointer;
@@ -249,7 +245,8 @@ transform: scale(1.05);
 
 .card-text h3{
     font-size: 20px;
-        overflow: hidden;
+    overflow: hidden;
+    margin-top: 10px;
 
 }
 
@@ -260,6 +257,7 @@ transform: scale(1.05);
 
 .card-image{
     position: relative;
+    margin-top: 16px;
 
 }
 
@@ -272,13 +270,24 @@ transform: scale(1.05);
     margin: 32px;
 }
 
-.card-text p{
+.card-text span{
     color: #b3b3b3;
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
 }
 
+.subtitle{
+     color: #b3b3b3;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.around img{
+    border-radius: 50%;
+}
 
 /* Button play hover */
 
