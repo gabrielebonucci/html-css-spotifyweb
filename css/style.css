@@ -45,7 +45,6 @@ ul{
     flex-direction: column;
     width: 220px;
     flex-shrink: 0;
-    padding: 8px;
 }
 
 .sidebar-content{
@@ -54,15 +53,18 @@ ul{
     width: 100%;
     margin: 3px;
     flex-grow: 1;
+
 }
 
 .sidebar a{
-    color: #b3b3b3;
     text-decoration: none;
     display: flex;
     align-items: center;
     font-weight: bold;
     width: fit-content;
+    margin: 0 10px;
+    color: #b3b3b3;
+
 }
 
 .song-details{
@@ -83,14 +85,21 @@ ul{
 }
 
 
-
 .primary-actions  img{
     height: 25px;
 }
 
-.sidebar .primary-actions a:hover {
-    color: #ffffff;
+.active:hover {
+    color: white;
 }
+
+.selected{
+border-left: 3px solid transparent;
+border-left-color: #1db954; 
+color: white; 
+}
+
+
 
 
 
@@ -360,9 +369,6 @@ transform: scale(1.05);
     height: 100px;
     flex-shrink: 0;
     align-items: center;
-    
-
-        /* debug */
     background-color: #282828;
 }
 
@@ -513,14 +519,24 @@ cursor: pointer;}
 
 /* Media query responsive */
 
-@media (max-width:760px) {
-
+@media (max-width:768px) {
+.card {
+        flex-basis: calc(100% / 4 - 24px); 
+    }
+    .card .card-play-button {
+        font-size: 44px;
+    }
 
 }
 
-@media (max-width:576px) {
+@media (max-width:480px) {
 .sidebar{
-    width: 100px;
-    padding: 8px;
-}
+width: 40px;
+
+
+} .sidebar span,
+    .playlist-container,
+    .user-section .install-app,
+    .user-section hr  {
+        display: none;}
 }
