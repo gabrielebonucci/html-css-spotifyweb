@@ -93,10 +93,12 @@ ul{
     color: white;
 }
 
-.selected{
+.primary-actions li a.selected{
+
 border-left: 3px solid transparent;
 border-left-color: #1db954; 
 color: white; 
+
 }
 
 
@@ -521,7 +523,7 @@ cursor: pointer;}
 
 @media (max-width:768px) {
 .card {
-        flex-basis: calc(100% / 4 - 24px); 
+        flex-basis: calc(100% / 4 - 18px); 
     }
     .card .card-play-button {
         font-size: 44px;
@@ -531,12 +533,23 @@ cursor: pointer;}
 
 @media (max-width:480px) {
 .sidebar{
-width: 40px;
+width: 50px;
+
+}
+.card{
+    flex-basis: calc(100% / 2 - 12px);
+}
 
 
-} .sidebar span,
+.sidebar span,
     .playlist-container,
     .user-section .install-app,
     .user-section hr  {
         display: none;}
-}
+
+.sidebar-content{
+        
+    margin: 0;
+        
+        }
+    }
